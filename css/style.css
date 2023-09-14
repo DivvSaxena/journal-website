@@ -1,0 +1,406 @@
+html, 
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: #efe3e3;
+}
+
+
+/* ================
+Layout
+================== */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.container-flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 0.625rem;
+}
+
+header{
+    background: #FAFAFA;
+    margin: 0 auto;
+    padding: 1.25em;
+}
+.site-title{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.fa-brands{
+    font-size: 2em;
+   
+}
+
+.site-title h2{
+    margin-bottom: 0;
+}
+.site-title p{
+    margin-top: 0.5em;
+}
+
+/* navigation */
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    margin-left: 2em;
+}
+
+nav a{
+    text-decoration: none;
+    color: #090909;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+    border-bottom: 2px solid #1792d2;
+}
+
+/* ================
+Sections
+================== */
+
+
+.hero-post{
+    max-width: 1085px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.hero-post h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 3.4rem;
+}
+.hero-post h1 a:hover{
+    border-bottom: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-container{
+    color: white;
+    position: absolute;
+    bottom: 300px;
+    left: 40px;
+}
+.hero-container p{
+    font-size: 1.2rem;
+}
+
+.hero-post img{
+   max-width: 100%;
+   width:100%;
+   max-width: 1085px;
+   background-size: cover;
+   
+}
+
+/*
+  FOR GRID
+*/
+.portfolio {
+    padding: 2em;
+    display: grid;
+    max-width: 1080px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-gap: 1em;
+} 
+
+
+
+.portfolio-title {
+    text-align: center;
+    color: #00C896;
+    grid-column: 1 / -1;
+}
+
+img {
+    max-width: 100%;
+}
+
+.portfolio-card {
+    box-shadow: 0 0 1em rgba(0,0,0,.25);
+    padding: 1em;
+    background: white;
+}
+
+.portfolio-card-title {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+
+/*
+VIEW MORE
+*/
+.view-more{
+  max-width: 1085px;
+  padding: 1em 0 3em 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.view-more a{
+    color: #000000;
+}
+.view-more a:hover,
+.view-more a:focus{
+    color: #1792d2;
+}
+
+footer{
+    background: #202020;
+    text-align: center;
+    padding: 1.25rem;
+    margin: 0 auto;
+}
+
+footer h1{
+    color: #ECECEC;
+    font-size: 1.0625rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+footer p{
+    color: #D7D7D7;
+    margin: 0.5em;
+}
+
+.hero-post-main{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em 0;
+    gap: 60px;
+    margin: 0 auto;
+}
+
+.hero-post-main img{
+    width: 20%;
+
+}
+.about-me{
+    width: 80%;
+}
+
+.about-me h1{
+    font-size: 2.25rem;
+}
+.about-me p{
+    font-size: 1rem;
+}
+.content-about-me{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.15rem;
+}
+/*MY JOURNEY PAGE*/
+.myjourney {
+    font-size: 1.25rem;
+}
+
+/*
+    Media Queries
+    */
+
+    @media (max-width:769px){
+        .hero-container{
+            position: absolute;
+            top: 0px;
+            bottom: 100px;
+        }
+        .hero-post h1 a{
+            font-size: 4rem;
+        }
+        .portfolio{
+            max-width: 1000px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+        .hero-post-main img{
+            width: 30%;
+        }
+        .about-me h1{
+            font-size: 1.8rem;
+        }
+        .about-me p{
+            font-size: 1rem;
+        }
+        .myjourney{
+            width: 80%;
+        }
+       
+
+    }
+    
+  @media (max-width:480px){
+    .hero-post h1 a{
+        font-size: 2rem;
+    }
+    .container-flex{
+        width: 100%;
+    }
+    
+    #date{
+        font-size: 0.9rem;
+        margin-top: 2rem;
+        
+    }
+    .hero-post img{
+        height: 300px;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    .site-title{
+        font-size: 0.7rem;
+    }
+    header{
+        padding: 0.5em 1.25em 0.1em 1.25em;
+    }
+
+    nav a{
+        font-size: 0.5rem;
+    }
+
+    nav li{
+        margin-left: 1em;
+    }
+    .hide{
+        display: none;
+    }
+
+    /* ABOUT PAGE*/
+    .hero-post-main{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    .hero-post-main img{
+        width: 45%;
+        height: auto;
+    }
+    .about-me h1{
+        font-size: 1.8rem;
+    }
+    .about-me p{
+        font-size: 1rem;
+    }
+    .about-me{
+        width: 90%;
+    }
+    /*MY JOURNEY*/
+    #myjourney-img{
+        width: 100%;
+        height: 250px;
+    }
+  }  
+  @media (max-width:404px){
+    .site-title{
+        font-size: 0.5rem;
+    }
+    header{
+        padding: 0em 1.25em 0.4em 1.25em;
+    }
+
+    nav a{
+        font-size: 0.55rem;
+    }
+    header{
+        padding: 0.6em 1.25em 0.1em 1.25em;
+    }
+    .hero-post img{
+        height: 400px;
+        background-size: cover;
+        object-fit: cover;
+    }
+    /* ABOUT PAGE*/
+    #mypic{
+        height: auto;
+        width: 45%;
+    }
+    .about-me{
+        width: 90%;
+    }
+    .hero-post-main img{
+        width: 20%;
+        height: auto;
+    }
+    .about-me h1{
+        font-size: 1.8rem;
+    }
+    .about-me p{
+        font-size: 1rem;
+    }
+  }
+
+  @media (max-width:376px){
+    .site-title{
+        font-size: 0.5rem;
+    }
+    .hero-post h1 a{
+        font-size: 1.9rem;
+    }
+    .container-flex{
+        padding-bottom: 0;
+    }
+    header{
+        padding: 0em 1.25em 0.4em 1.25em;
+    }
+    .hero-container{
+        text-align: start;
+        
+    }
+    .hero-container p {
+        font-size: 1rem;
+        text-align: start;
+        padding-right: 12px;
+        
+    }
+    .hero-post img{
+        height: 400px;
+        background-size: cover;
+        object-fit: cover;
+    }
+  }
+  @media (max-width:367px){
+    .site-title{
+        font-size: 0.44rem;
+    }
+    nav a{
+        font-size: 0.39rem;
+        font-weight: bolder;
+    }
+  }
+
+  @media (max-width:321px){
+    .portfolio{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    .site-title{
+        font-size: 0.4rem;
+    }
+    nav a{
+        font-size: 0.38rem;
+    }
+}
