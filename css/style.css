@@ -140,6 +140,12 @@ img {
     box-shadow: 0 0 1em rgba(0,0,0,.25);
     padding: 1em;
     background: white;
+    
+}
+.portfolio-card:hover,
+.portfolio-card:focus{
+    cursor: pointer;
+    background-color: #d0eae4;
 }
 
 .portfolio-card-title {
@@ -198,10 +204,18 @@ footer p{
 
 .hero-post-main img{
     width: 20%;
-
 }
+
+.hero-post-main img:hover{
+    width: 30%;
+}
+
 .about-me{
     width: 80%;
+}
+.about-me:hover,
+.about-me:focus{
+    color: #092b3e;
 }
 
 .about-me h1{
@@ -326,6 +340,9 @@ footer p{
     nav a{
         font-size: 0.55rem;
     }
+    nav a:hover{
+        color: #1792d2;
+    }
     header{
         padding: 0.6em 1.25em 0.1em 1.25em;
     }
@@ -388,7 +405,7 @@ footer p{
         font-size: 0.44rem;
     }
     nav a{
-        font-size: 0.39rem;
+        font-size: 0.45rem;
         font-weight: bolder;
     }
   }
